@@ -1,0 +1,39 @@
+.list-group{
+    margin: 0;
+    padding: 0;
+}
+
+.list-group-item span img{
+    width: 15px;
+    height: 15px;
+}
+
+.list-group-item span{
+    margin: 0 10px;
+}
+
+.list-group-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    border-bottom: 1px solid;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 18px;
+    transition-duration: 1s;
+    cursor: pointer;
+}
+
+.list-group-item:hover{
+    background-color: #acacac;
+}
+
+.list-group-item span{
+    transition-duration: 1s;
+}
+
+.list-group-item:hover span{
+    margin-left: 30px;
+    transition-duration: 1s;
+}

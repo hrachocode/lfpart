@@ -1,0 +1,1 @@
+export const productsAPI = key => `${window.location.protocol}//${window.location.host}/api/v1/${key}?token=674e3a8b-fd97-4534-8b01-ade4618a757c`

@@ -1,0 +1,153 @@
+#products-view{
+    display: flex;
+    justify-content: space-between;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+#products-view>div{
+    display: flex;
+    align-items: center;
+}
+
+#products-view>div>div{
+    display: flex;
+    align-items: center;
+    z-index: 99999;
+}
+
+#products-view p {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0;
+}
+
+#comparison>:first-child{
+    background-image: url(../icons/view1.png);
+}
+
+#comparison>span{
+    background-repeat: no-repeat;
+    background-size: 15px;
+    height: 15px;
+    width: 15px;
+    margin: 0 5px;
+}
+
+#comparison>span:hover{
+    cursor: pointer;
+}
+
+#comparison>:nth-child(2){
+    background-image: url(../icons/view2.png);
+}
+
+.view-arrow{
+    background-image: url(../icons//arrow-bottom.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20px;
+    height: 20px;
+    width: 20px;
+}
+
+.show-container{
+    position: relative;
+}
+
+.show:hover{
+    cursor: pointer;
+}
+
+.view-list{
+    top: 20px;
+    margin: 10px 0;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    flex-direction: column;
+    background-color: #fff;
+    border: 1px solid #0000006e;
+}
+
+
+.show-container>.show>:nth-child(2){
+    margin: 0 10px;
+}
+
+.show-container>div:first-child span{
+    font-weight: 600;
+}
+
+.view-list>span{
+    padding: 0 20px;
+}
+
+.view-list>span:hover{
+    cursor: pointer;
+    background-color: #aaaaaa;
+}
+
+#open-filter{
+    position: absolute;
+    left: 6px;  
+}
+
+@media only screen and (max-width: 817px) {
+    #products-list-view{
+        width: 95% !important;
+    }
+    #products-view{
+        margin-left: 10%;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    #comparison p{
+        display: none;
+    }
+    #product-list>div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #products-view>div>div{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    #products-view p {
+        font-size: 14px;
+        order: -1;
+    }
+    #products-view #show span {
+        font-size: 14px;
+        flex-basis: 20%;
+        text-align: center;
+    }
+    #products-view .view-list{
+        top: 30px;
+        left: 50%;
+        transform: translate(-50%)
+    }   
+    #products-view .view-arrow{
+        flex-basis: unset;
+        order: -1;
+        margin-left: 5px;
+    }
+    .show-container>.show>:nth-child(2) {
+        margin: 0 5px;
+    }
+    .view-arrow{
+        background-size: 15px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #comparison{
+        display: none !important;
+    }
+    #products-view{
+        justify-content: space-evenly;
+    }
+}

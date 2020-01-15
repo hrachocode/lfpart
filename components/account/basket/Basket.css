@@ -1,0 +1,108 @@
+.total-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.total-heading{
+    font-weight: bold;
+}
+
+#basket{
+    margin-top: 150px;
+}
+
+#basket tbody td img{
+    width: 100px;
+}
+
+#basket tbody{
+    font-weight: 600;
+}
+
+#basket tbody td:last-child>img{
+    width: 25px;
+    cursor: pointer;
+}
+
+#basket tfoot{
+    text-align: right;
+}
+
+#basket>div>div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#basket>div>div>p{
+    margin: 0;
+}
+
+#basket>div>div>p:first-child{
+    font-weight: 600;
+}
+
+#basket>div>div>div{
+    border-bottom: 1px solid black;
+    padding: 20px 0;
+    width: 50%;
+    min-width: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#basket .total-price{
+    font-size: 20px;
+}
+
+#select-option{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.shipping-address-wrapper{
+    justify-content: left !important;
+}
+
+.shipping-address-wrapper input{
+    width: 20%;
+}
+
+#delivery-comment{
+    margin: 30px 0;
+}
+
+#delivery-comment>textarea{
+    width: 100%;
+    height: 60px;
+    border: 1px solid black;
+    padding: 10px;
+}
+
+#basket #buying-card{
+    margin: 30px 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    #basket tbody td img{
+        width: 60px;
+    }
+    #basket tbody td:last-child>img{
+        width: 20px;
+    }
+    #basket>div>div{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #basket tr>th:first-child, #basket tr>td:first-child{
+        display: none;
+    }
+}

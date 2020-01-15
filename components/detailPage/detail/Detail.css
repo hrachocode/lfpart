@@ -1,0 +1,39 @@
+#detail{
+    margin: 145px auto 0;
+    width: 92%;
+}
+
+#detail-top {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    min-height: 420px;
+    justify-content: space-between;
+}
+
+#path-name{
+    position: absolute;
+    top: -25px;
+    left: 10px;
+}
+
+.detail-image{
+    margin: auto;
+}
+
+.detail-hearth{
+    top: 20px;
+    right: 25px;
+    width: 22px;
+    position: absolute;
+}
+
+.links{
+    margin-left: 20px;
+}
+
+#detail-product-slider{
+    text-align: center;
+    margin: 100px 0 20px 0;
+}
+

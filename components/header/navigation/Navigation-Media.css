@@ -1,0 +1,51 @@
+@media only screen and (max-width: 1100px) {
+
+    #navigation{
+        height: 80px !important;
+    }
+
+    #navigation-div{
+        font-size: 13px !important;
+    }
+
+    #navigation-logo img {
+        width: 48px;
+        height: 32px;
+     
+    }
+
+    #navigation-list{
+        flex-wrap: wrap !important;
+    }
+
+    #navigation-list li {
+        margin: 5px 0px !important;
+        text-align: center !important;  
+    }
+
+    #navigation-end img{
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    #navigation-end input[type=text]{
+        background-size: 20px !important;
+        font-size: 14px !important;
+        padding: 10px 10px !important;
+    }
+
+    #navigation-end input[type=text]:focus {
+        width: 150px !important;
+        height: 35px !important;
+        cursor : unset !important;
+      }
+}
+
+@media only screen and (max-width: 799px) {
+    .result{
+        right: unset;
+        left: -55px;
+        top: 53px;
+    }
+}
+

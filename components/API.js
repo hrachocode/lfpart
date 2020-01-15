@@ -1,0 +1,2 @@
+export const API_URL = "https://api.unsplash.com/search/photos/?client_id=4ba96a0c4a7aca189f577b892f66e056fca0ef5f8285ffb0e137368a85899ca0&query=";
+export const DETAIL_URL = "https://unsplash.com/photos";

@@ -1,0 +1,55 @@
+#footer{
+    color: white;
+    width: 100%;
+}
+
+#footer a{
+    color: white;
+}
+
+#footer-nav{
+    width: 100%;
+    background-color: black;
+}
+
+#footer-nav-container{
+    width: 95%;
+    padding: 50px 0;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+#footer-nav-container>div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px 30px;
+    flex-basis: 20%;
+}
+
+#footer-nav-container h4{
+    margin-bottom: 20px;
+}
+
+#my-page{
+    width: 190px;
+}
+
+#join-us span{
+    margin : 3%;
+}
+
+#join-us img{
+    width: 30px;
+    height: 30px;
+}
+
+#join-us h4{
+    width: 80%;
+}
+
+#join-us>div{
+    width: 100%;
+}

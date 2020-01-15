@@ -1,0 +1,21 @@
+#products{
+    width: 96%;
+    display: flex;
+    margin: 150px auto 0;
+    position: relative;
+}
+
+#products-list-view{
+    width: 75%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 817px) {
+    #products{
+        justify-content: space-around !important;
+    }
+    #products-list-view{
+        margin: unset;
+        width: 85%;
+    }
+}

@@ -1,0 +1,91 @@
+#top-bar{
+    height: 35px;
+    background-image: linear-gradient(to right, #000, #999999);
+}
+
+#top-bar>div{
+    height: 100%;
+    display : flex;
+    position: relative;
+    align-items: center;
+}
+
+#top-bar>div {
+    color : white;
+    margin-right: 20px;
+}
+
+#top-bar img{
+    width: 20px;
+    height: 20px;
+}
+
+#location-is{
+    margin-right: 10px;
+}
+
+#country{
+    left: 50%;
+    transform: translate(-50%, 0)
+}
+
+#flag-content{
+    right: 45px !important;
+}
+
+#TopBarEnd{
+    right: 10px;
+    width: 80px;
+    justify-content: space-between;
+}
+
+.item-list{
+    display: flex;
+    position: absolute;
+}
+
+.show-item{
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.show-item::after{
+    content: "";
+    width: 10px;
+    height: 10px;
+    display: block;
+    margin-left: 5px;
+    background-size: 10px;
+    background-position: right;
+    background-image: url('./icons/drop-down-arrow.png');
+}
+
+.dropdown-content{
+    top: 46px;
+    right: -5px;
+    padding: 10px;
+    display: flex;
+    position: absolute;
+    border-radius: 5px;
+    flex-direction: column;
+    z-index: 99999999999999;
+    background-color: #fff;
+    border: 1px solid #0000006e;
+}
+
+.dropdown-content{
+    top: 30px;
+    right: 0px;
+}
+
+@media only screen and (max-width: 550px) {
+    #location-is{
+        display: none;
+    }
+
+    #country{
+        left: 25% !important;
+    }
+}
+

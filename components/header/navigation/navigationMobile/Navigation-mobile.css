@@ -1,0 +1,144 @@
+#navigation-media{
+    height: 70px;
+    z-index: -2;
+    position: relative;
+}
+
+#navigation-media-menu{
+    height: 70px;
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+#navigation-media-menu>div:first-child{
+    display: flex;
+    align-items: center;
+}
+
+#menu-list{
+    position: absolute; 
+    top: 65px;
+}
+
+#menu-list ul{
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 0 10px 0px #cbcbcb;
+}
+
+#menu-button:hover{
+    cursor: pointer !important;
+}
+
+#menu-list li {
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    border-bottom: 0.5px solid #818181;
+    background-color: #fff;
+}
+
+#menu-list ul>a:last-child li{
+    border: none;
+}
+
+#navigation-media-menu>div:first-child span{
+    margin-right: 10px;
+}
+
+#navigation-media-menu>div:first-child>span:last-child{
+    margin-bottom: 5px;
+}
+
+#navigation-media img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+
+#navigation-media-logo{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#navigation-media-logo img{
+    width: 50px;
+    height: 40px;
+}
+
+#navigation-media-menu input{
+    width: 0;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url('../icons/zoom.png');
+    background-color: white;
+    background-size: 25px;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 10px 10px 10px 30px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+#navigation-media-menu input:focus {
+    width: 150px;
+    height: 35px;
+    cursor : unset;
+}
+
+#navigation-media-end{
+    display: flex;
+}
+
+#navigation-media-end a{
+    position: relative;
+    display: block;
+}
+
+#navigation-media-end a>span{
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 0 5px 0px black;
+    right: -5px;
+    top: 0;
+    border-radius: 100%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (max-width: 500px) {
+
+    #navigation-media img {
+        width: 20px;
+        height: 20px;
+        margin: 8px;
+    }
+
+    #navigation-media-logo img{
+        width: 40px;
+        height: 30px;
+    }
+
+    #navigation-media-menu input{
+        font-size: 14px;
+        background-size: 20px;
+        padding: 10px 10px 10px 30px;
+    }
+
+    #navigation-media-menu input:focus{
+        width: 100px;
+        height: 25px;
+    }
+
+}

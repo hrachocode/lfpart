@@ -1,0 +1,42 @@
+#subscribe{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 100px;
+}
+
+#subscribe>h3{
+    color: black;
+    margin: 0;
+}
+
+#subscribe-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 55%;
+}
+
+#subscribe-form input:first-child{
+    width: 60%;
+    padding: 10px;
+    outline-style: none;
+    color : #1d1d1d;  
+    border : 2px solid #1d1d1d; 
+    min-width: 300px;
+}
+
+#subscribe-form input:last-child{
+    background-color: #1d1d1d;
+    border : none;
+    color: white;
+    padding: 12px 30px;
+    background-image: url(../icons/arrow-right.png);
+    background-size: 22px;
+    background-position: 50% ,50% !important;
+    background-repeat: no-repeat;
+}
+
+
+input:invalid:not(:placeholder-shown) {border-color: red;}
+input:valid:not(:placeholder-shown) {border-color: green;}

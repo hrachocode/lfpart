@@ -1,0 +1,122 @@
+#account{
+    width: 90%;
+    margin: auto;
+}
+
+#account #account-title{
+    padding: 20px 0;
+    width: 100%;
+    max-width: 500px;
+    text-align: left;
+}
+
+#account #account-title>h2{
+    padding-bottom: 5px;
+}
+
+#account #account-options{
+    width: 100%;
+    margin: auto;
+    min-width: 360px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#account-title h2{
+    max-width: 600px;
+}
+
+#account-title p{
+    max-width: 600px;
+}
+
+#account #account-options>*{
+    margin: 10px 0;
+    padding: 10px;
+    height: 45px;
+    width: 70%;
+    max-width: 500px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: right;
+    background-color: #0000;;
+    border: 2px solid #1d1d1d;
+}
+
+#account #account-options>*:hover{
+    color: black;
+    box-shadow: 0 0 8px 0px #d1d1d1;
+    cursor: pointer;
+}
+
+#account #account-options>*:before{
+    content: "";
+    width: 30px;
+    min-width: 30px;
+    height: 20px;
+    display: block;
+    background-repeat: no-repeat;
+    background-size: 20px;
+    border-right: 1px solid black;
+}
+
+#account #account-options>*:first-child:before {
+    background-image: url(./images/personal-info.png);
+}
+
+#account #account-options>*:nth-child(2):before{
+    background-image: url(./images/agenda.png);
+}
+
+#account #account-options>*:nth-child(3):before{
+    background-image: url(./images/bill.png);
+}
+
+#account #account-options>*:nth-child(4):before{
+    background-image: url(./images/wishlist.png);
+}
+
+#account #account-options>*:nth-child(5):before{
+    background-image: url(./images/spam.png);
+}
+
+#account #account-options>*:nth-child(6):before{
+    background-image: url(./images/logout.png);
+}
+
+@media only screen and (max-width: 650px) {
+    #account #account-options{
+        width: 98%;
+    }
+
+    #account #account-options>*{
+        width: 100%;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+    #account #account-options{
+        min-width: unset;
+        width: 90%;
+    }
+    
+    #account #account-options>a{
+        font-size: 12px;
+    }
+
+    #account #account-title{
+        width: 90%;
+    }
+    
+    #account #account-title>h2{
+        font-size: 18px;
+    }
+
+    #account #account-title>p{
+        font-size: 12px;
+    }
+}
